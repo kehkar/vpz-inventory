@@ -1,0 +1,359 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    /* display: none;  */
+}
+
+/* Outer Container */
+.outer-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+/* User Info Panel */
+.user-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px; 
+    height: 600px; 
+    text-align: center;
+    margin-right: 295px; 
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.user-info h5 {
+    color: white; 
+    margin: 15px 0; 
+}
+
+.user-info p {
+    color: #cccccc; 
+    margin: 0;
+}
+
+.user-icon {
+    max-height: 120px; 
+    width: auto; 
+    margin-top: 15px; 
+}
+
+.user-info-buttons {
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%; 
+    text-align: center;
+    margin-top: 24.5rem; 
+    padding: 10px 0; 
+}
+
+.user-info-buttons h5 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.user-info-buttons .btn-secondary {
+    background-color: transparent; 
+    border: none; 
+    color: white; 
+}
+
+.user-info-buttons .btn-secondary:hover {
+    color: #0084ff; 
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.user-info-buttons .btn-primary {
+    background-color: #0084ff;
+    border: transparent;
+    border-radius: 0px;
+    width: 13.5rem; 
+    font-size: 1.2rem;
+}
+
+.user-info-buttons .btn-outline-secondary {
+    color: white;
+    background-color: #0084ff;
+    border-color: transparent;
+    border-radius: 0px;
+    width: 11.6rem; 
+    font-size: 1.2rem;
+    margin-left: 45px; 
+}
+
+.user-info-buttons .btn-outline-secondary:hover {
+    color: white;
+    background-color: #0084ff;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    border-color: transparent;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 15px; 
+}
+
+.circle {
+    width: 60px;
+    height: 60px; 
+    border: 1px solid; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 1.0rem; 
+}
+
+.circle1 {
+    border-color: rgba(255, 145, 0, 0.8); 
+}
+
+.circle2 {
+    border-color: rgba(194, 62, 62, 0.8);
+}
+
+.circle3 {
+    border-color: rgba(0, 225, 255, 0.8);
+}
+
+/* Inventory Container */
+.inventory-container {
+    width: 100%;
+    max-width: 400px; 
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.progress-bar-container {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 15px;
+    background-color: #444;
+}
+
+.progress-bar {
+    height: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+/* Inventory Slot Styling */
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.inventory-slot {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 35px;
+    text-align: center;
+    min-height: 225px;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 300px;
+    bottom: 193px;
+}
+
+.slot-details {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.slot-details p {
+    margin: 0; 
+}
+
+.dropdown {
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.inventory-slot img {
+    max-height: 85px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* Right Panel Button Box */
+.button-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px; 
+    height: 600px; 
+    text-align: center;
+    margin-left: 325px; 
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.button-box h5 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: transparent; 
+    border: none;
+    color: white; 
+}
+
+.btn-secondary:hover {
+    color: #0084ff; 
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-primary {
+    background-color: #0084ff;
+    border: transparent;
+    border-radius: 0px;
+    width: 13.5rem;
+    font-size: 1.0rem;
+}
+
+.btn-outline-secondary {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    border-radius: 0px;
+    width: 11.6rem;
+    font-size: 1.0rem;
+    margin-left: 45px;
+}
+
+.btn-outline-secondary:hover {
+    color: white;
+    background-color: #494949;
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 0px;
+    margin-left: 49.5rem;
+    margin-bottom: 175px;
+}
+
+.top-bar h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.top-bar .badge {
+    background-color: #337aff;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 7px;
+}
+
+.item-dropped-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 23.5rem;
+    height: 4.5rem;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-left: 12px; 
+    margin-bottom: 15px; 
+}
+
+.item-dropped-text {
+    color: white;
+    margin-left: 15px; 
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.item-dropped-image {
+    max-height: 50px;
+    margin-left: 15px; 
+}
+
+.item-dropped-button {
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0084ff; 
+    border: none; 
+    border-radius: 0px; 
+    margin-left: 3.5rem;
+}
+
+.item-dropped-button:hover {
+    background-color: #005bb5; 
+}
+
+.tab-content {
+    display: none; 
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+#notification {
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    background-color: transparent; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    position: fixed; 
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000; 
+}
+
+/* Hotbar Container */
+.hotbar-container {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    position: absolute;
+    left: 10px; 
+    bottom: 20px; 
+}
+
+/* Hotbar Slots */
+.hotbar-slot {
+    width: 30px; /* Size of each box */
+    height: 25px;
+    border: 1px solid rgb(0, 132, 255); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 132, 255);
+    font-size: 1.0rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent; 
+    margin-left: 65px;
+    margin-bottom: 55px;
+}
+
+.second-inventory-tab {
+    width: 55px;
+    bottom: 17rem;
+    left: 54.7rem;
+}
+
